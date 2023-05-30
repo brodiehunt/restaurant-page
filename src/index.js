@@ -1,9 +1,12 @@
-import buildElement from './element-maker.js';
+// import buildElement from './element-maker.js';
 import buildHeader from './header.js';
+import buildFooter from './footer.js';
 
 const bodyElement = document.querySelector('BODY');
 const contentContainerDiv = document.querySelector('.content');
 const statement = 'someStatement';
+
+
 function tabSwitch(event) {
   
   event.target.parentElement.childNodes.forEach((node)=>{
@@ -27,7 +30,8 @@ function tabSwitch(event) {
 
 
 const headerEl = buildHeader(tabSwitch);
-
+const footerEl = buildFooter();
 bodyElement.prepend(headerEl);
+bodyElement.appendChild(footerEl);
 
 
