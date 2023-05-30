@@ -8,9 +8,9 @@ export default function buildMenu() {
   const menuContainerEl = buildElement({type: 'div', classes: ['menu', 'container']});
 
   // one section of menu -starters
-  const menuSectionEl = buildElement({type: 'div', classes: ['menu', 'section']});
-  const menuSectionImgEl = buildElement({type: 'img', classes: ['menu', 'img'], src: '/src/images/starters.jpg', alt: 'pita bread'})
-  const menuSectionContentContainerEl = buildElement({type: 'div', classes: ['section', 'content']});
+  const menuSectionEl = buildElement({type: 'div', classes: ['menu', 'section', 'reverse']});
+  const menuSectionImgEl = buildElement({type: 'img', classes: ['menu', 'img', 'reverse'], src: '/src/images/starters.jpg', alt: 'pita bread'})
+  const menuSectionContentContainerEl = buildElement({type: 'div', classes: ['section', 'content', 'reverse']});
   const menuSectionTitleEl = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Starters'})
   const menuItemContainerEl = buildElement({type: 'div', classes: ['item', 'container']})
   const menuItemTitleEL = buildElement({type: 'h3', classes: ['item', 'title'], innerText: "Item 1"})
@@ -45,9 +45,9 @@ export default function buildMenu() {
   menuSectionContentContainerEl2.appendChild(menuItemContainerEl.cloneNode(true));
   
   // Third menu section -pizza
-  const menuSectionEl3 = buildElement({type: 'div', classes: ['menu', 'section']});
-  const menuSectionImgEl3 = buildElement({type: 'img', classes: ['menu', 'img'], src: '/src/images/pizza.jpg', alt: 'Margherita Pizza'})
-  const menuSectionContentContainerEl3 = buildElement({type: 'div', classes: ['section', 'content']});
+  const menuSectionEl3 = buildElement({type: 'div', classes: ['menu', 'section', 'reverse']});
+  const menuSectionImgEl3 = buildElement({type: 'img', classes: ['menu', 'img','reverse'], src: '/src/images/pizza.jpg', alt: 'Margherita Pizza'})
+  const menuSectionContentContainerEl3 = buildElement({type: 'div', classes: ['section', 'content', 'reverse']});
   const menuSectionTitleEl3 = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Pizza'})
 
   // compose menu section - pizza

@@ -330,6 +330,42 @@ li#contact {
     padding: 0.3em 0rem;
   }
 
+  /* Menu page styles */
+  .menu.title {
+    margin: 0 auto;
+    padding: 1em 0;
+    /* background-color: var(--main-bg-light); */
+  }
+  .menu.container {
+    padding: 0;
+  }
+
+  .menu.section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 1em;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--main-bg-light);
+  }
+
+  .menu.section.reverse {
+    background-color: white;
+  }
+
+  .menu.img {
+    align-self: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  }
+
+  .section.content.reverse {
+    order: 1;
+  }
+  .menu.img.reverse {
+    order: 2
+  }
+
 
 }
 
