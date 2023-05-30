@@ -160,6 +160,42 @@ li#contact {
   margin-bottom: 5rem;
 }
 
+
+/* Menu Page styles */
+
+.menu.title {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.menu.container {
+  padding: 1rem;
+}
+
+.menu.section {
+  margin-bottom: 3rem;
+}
+
+.menu.img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.section.title {
+  margin-bottom: 1rem;
+}
+
+.item.container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.item.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 /* footer styles */
 .footer {
   background-color: var(--main-bg-dark);
