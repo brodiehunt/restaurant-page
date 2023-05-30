@@ -1,5 +1,5 @@
 export default function buildElement(elementFeatures) {
-  let {type, classes, id, innerText, attributes, src, alt, eventFunction } = elementFeatures;
+  let {type, classes, id, innerText, attributes, src, alt, eventFunc } = elementFeatures;
 
   const newElement = document.createElement(type);
   
@@ -20,7 +20,7 @@ export default function buildElement(elementFeatures) {
 
   alt && (newElement.alt = alt);
 
-  eventFunction && newElement.addEventListener('click', eventFunction);
+  eventFunc && newElement.addEventListener('click', eventFunc);
 
   return newElement;
 }
