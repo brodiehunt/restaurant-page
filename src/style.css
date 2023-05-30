@@ -30,6 +30,10 @@ h1 {
   font-size: 4.23em;
 }
 
+p {
+  line-height: 1.6rem;
+}
+
 
 /* Header styles */
 
@@ -94,6 +98,50 @@ li#contact {
   justify-self: end;
 }
 
+/* Homepage styles */
+
+.landing.img-container {
+  height: 40vh;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.landing.content-container {
+  margin: 1.5em 1rem;
+}
+
+.landing.title {
+  margin-bottom: 1rem;
+}
+
+.landing.button {
+  background: rgba(var(--secondary), 0.91);
+	color: inherit;
+	padding: 0;
+  border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  margin: 3rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+.about.img-container {}
+
+.about.caption {
+  font-size: 0.8em;
+  padding: 0.3em 1rem;
+}
+
+.about.statement {
+  padding: 1em;
+  margin-bottom: 5rem;
+}
 
 /* footer styles */
 .footer {

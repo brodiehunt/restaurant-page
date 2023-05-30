@@ -1,6 +1,7 @@
 // import buildElement from './element-maker.js';
 import buildHeader from './header.js';
 import buildFooter from './footer.js';
+import buildHomePage from './homepage.js';
 
 const bodyElement = document.querySelector('BODY');
 const contentContainerDiv = document.querySelector('.content');
@@ -31,6 +32,8 @@ function tabSwitch(event) {
 
 const headerEl = buildHeader(tabSwitch);
 const footerEl = buildFooter();
+const homePageEl = buildHomePage();
+contentContainerDiv.appendChild(homePageEl);
 bodyElement.prepend(headerEl);
 bodyElement.appendChild(footerEl);
 
