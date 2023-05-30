@@ -1,5 +1,9 @@
+import buildElement from './element-maker.js';
 
+let object = {type: 'input', classes: ['class1', 'class2'], id: 'newId', attributes: [{type: 'text'}, {name: 'input1'}]};
 
+let newDiv = buildElement(object);
+console.log(newDiv);
 const bodyElement = document.querySelector('BODY');
 const contentContainerDiv = document.querySelector('.content');
 
@@ -88,3 +92,5 @@ function createHeader(container) {
 
 createHeader(bodyElement); 
 createStuff1(contentContainerDiv);
+
+contentContainerDiv.appendChild(newDiv);
