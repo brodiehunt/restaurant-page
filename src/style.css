@@ -104,6 +104,7 @@ li#contact {
   height: 40vh;
   overflow: hidden;
   margin-top: 2rem;
+  /* display: flex; */
 }
 
 .landing.content-container {
@@ -131,7 +132,23 @@ li#contact {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
 }
 
-.about.img-container {}
+.about.title {
+  padding: 1rem;
+  
+}
+.about.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about.img-container {
+  display: flex;
+  flex-direction: column;
+}
+.about.img {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 .about.caption {
   font-size: 0.8em;
@@ -200,6 +217,8 @@ li#contact {
 
 
 @media only screen and (min-width: 768px) {
+
+  /* Header styles */
   .nav-bar {
     display: flex;
     justify-content: space-between; 
@@ -223,4 +242,62 @@ li#contact {
     margin-left: 2em;
   }
 
+  /* Homepage styles */
+
+  .homepage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1em;
+    /* grid-gap: 2em; */
+    margin: 130px auto;
+    max-width: 1024px;
+    color: white;
+  }
+
+  .landing.style-bg {
+    position: absolute;
+    z-index: -1;
+    background-color: var(--main-bg-dark);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .landing.img-container {
+    margin: 0;
+    height: fit-content;
+  }
+
+  .landing.img {
+    max-width: 400px;
+  }
+
+
+  .landing.content-container {
+    align-self: center;
+  }
+
+
+  .container.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1em;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  .about.caption {
+    font-size: 0.8em;
+    padding: 0.3em 0rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .landing.style-bg {
+    height: 85vh;
+  }
 }

@@ -11,16 +11,19 @@ export default function buildHomePage() {
   const landingTitle = buildElement({type: 'h2', classes: ['landing', 'title'], innerText: 'Exquisite, hand-crafted Italian Cuisine'});
   const landingStatement = buildElement({type: 'p', classes: ['landing', 'statement'], innerText: 'Come and embrace the flavours of our Little Italy. Ignite your tastebuds with our delicious selection of cultural classics.'});
   const landingButtonEl = buildElement({type: 'button', classes: ['landing', 'button'], innerText: 'Our Menu'});
+  const styleDiv = buildElement({type: 'div', classes: ['landing', 'style-bg']});
 
   // append them to each other;
   landingContainerEl.appendChild(landingImgContainerEl);
   landingContainerEl.appendChild(landingContentContainerEl);
+  landingContainerEl.appendChild(styleDiv);
   landingImgContainerEl.appendChild(landingImgEl);
   landingContentContainerEl.appendChild(landingTitle);
   landingContentContainerEl.appendChild(landingStatement);
   landingContentContainerEl.appendChild(landingButtonEl);
 
   // create about section elements
+  const aboutPageTitleEl = buildElement({type: 'h2', classes: ['about', 'title'], innerText: 'Our Origin Story'});
   const aboutPageContainerEl = buildElement({type: 'div', classes: ['container', 'about']});
   const aboutPageImgContainerEl = buildElement({type: 'div', classes: ['img-container', 'about']});
   const aboutPageImgEl = buildElement({type: 'img', classes: ['img', 'about'], alt: 'Our head Chef', src: '/src/images/about-img.jpg'});
@@ -36,6 +39,7 @@ export default function buildHomePage() {
   aboutContentContainerEl.appendChild(aboutStatement);
 
   entireContainer.appendChild(landingContainerEl);
+  entireContainer.appendChild(aboutPageTitleEl);
   entireContainer.appendChild(aboutPageContainerEl);
   return entireContainer;
 }
