@@ -1,4 +1,7 @@
 import buildElement from './element-maker.js';
+import startersImg from './images/starters.jpg';
+import mainImg from './images/pasta1.jpg';
+import pizzaImg from './images/pizza.jpg';
 
 export default function buildMenu() {
 
@@ -9,7 +12,7 @@ export default function buildMenu() {
 
   // one section of menu -starters
   const menuSectionEl = buildElement({type: 'div', classes: ['menu', 'section', 'reverse']});
-  const menuSectionImgEl = buildElement({type: 'img', classes: ['menu', 'img', 'reverse'], src: '/src/images/starters.jpg', alt: 'pita bread'})
+  const menuSectionImgEl = buildElement({type: 'img', classes: ['menu', 'img', 'reverse'], src: startersImg, alt: 'pita bread'})
   const menuSectionContentContainerEl = buildElement({type: 'div', classes: ['section', 'content', 'reverse']});
   const menuSectionTitleEl = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Starters'})
   const menuItemContainerEl = buildElement({type: 'div', classes: ['item', 'container']})
@@ -32,7 +35,7 @@ export default function buildMenu() {
   
   // second menu section - mains
   const menuSectionEl2 = buildElement({type: 'div', classes: ['menu', 'section']});
-  const menuSectionImgEl2 = buildElement({type: 'img', classes: ['menu', 'img'], src: '/src/images/pasta1.jpg', alt: 'Bowl of pasta'});
+  const menuSectionImgEl2 = buildElement({type: 'img', classes: ['menu', 'img'], src: mainImg, alt: 'Bowl of pasta'});
   const menuSectionContentContainerEl2 = buildElement({type: 'div', classes: ['section', 'content']});
   const menuSectionTitleEl2 = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Mains'})
 
@@ -46,7 +49,7 @@ export default function buildMenu() {
   
   // Third menu section -pizza
   const menuSectionEl3 = buildElement({type: 'div', classes: ['menu', 'section', 'reverse']});
-  const menuSectionImgEl3 = buildElement({type: 'img', classes: ['menu', 'img','reverse'], src: '/src/images/pizza.jpg', alt: 'Margherita Pizza'})
+  const menuSectionImgEl3 = buildElement({type: 'img', classes: ['menu', 'img','reverse'], src: pizzaImg, alt: 'Margherita Pizza'})
   const menuSectionContentContainerEl3 = buildElement({type: 'div', classes: ['section', 'content', 'reverse']});
   const menuSectionTitleEl3 = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Pizza'})
 
@@ -60,7 +63,7 @@ export default function buildMenu() {
 
   // Fourth menu Section -desserts
   const menuSectionEl4 = buildElement({type: 'div', classes: ['menu', 'section']});
-  const menuSectionImgEl4 = buildElement({type: 'img', classes: ['menu', 'img'], src: '/src/images/starters.jpg', alt: 'pita bread'})
+  const menuSectionImgEl4 = buildElement({type: 'img', classes: ['menu', 'img'], src: startersImg, alt: 'pita bread'})
   const menuSectionContentContainerEl4 = buildElement({type: 'div', classes: ['section', 'content']});
   const menuSectionTitleEl4 = buildElement({type: 'h2', classes: ['section', 'title'], innerText: 'Desserts'});
 

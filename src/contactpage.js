@@ -1,11 +1,11 @@
 import buildElement from './element-maker.js';
-
+import contactImg from './images/contact.jpg';
 export default function buildContact() {
 
   // large container
   const largeContainerEl = buildElement({type: 'div', classes: ['large-container']});
   const imgContainerEl = buildElement({type: 'div', classes: ['img-container', 'contact']});
-  const imgEl = buildElement({type: 'img', classes: ['img', 'contact'], src: '/src/images/contact.jpg', alt: 'Cook in the kitchen'});
+  const imgEl = buildElement({type: 'img', classes: ['img', 'contact'], src: contactImg, alt: 'Cook in the kitchen'});
   const contactTitleEl = buildElement({type: 'h1', classes: ['contact', 'title'], innerText: 'Contact Us'});
   const subtitleEl = buildElement({type: 'h2', classes: ['get-in-touch', 'title'], innerText: 'Get In Touch'});
 

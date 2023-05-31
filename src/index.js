@@ -1,12 +1,14 @@
-// import buildElement from './element-maker.js';
+import './style.css';
 import buildHeader from './header.js';
 import buildFooter from './footer.js';
 import buildHomePage from './homepage.js';
 import buildMenu from './menupage.js';
 import buildContact from './contactpage.js';
 
+
 const bodyElement = document.querySelector('BODY');
-const contentContainerDiv = document.querySelector('.content');
+const contentContainerDiv = document.createElement('div');
+bodyElement.appendChild(contentContainerDiv);
 
 
 function tabSwitch(event) {
