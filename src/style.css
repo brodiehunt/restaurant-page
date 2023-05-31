@@ -195,6 +195,94 @@ li#contact {
   right: 0;
 }
 
+/* contact page styles*/
+
+.contact.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.contact.img {
+  width: 100%;
+}
+
+.contact.title {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+.get-in-touch.title {
+  margin: 2em auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.contact.container {
+  padding: 1rem;
+}
+
+.business-details {
+  margin-bottom: 4rem;
+}
+
+.section {
+  padding: 1em 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  padding-bottom: 0.5em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  margin-bottom: 4rem;
+}
+
+.form-label {
+  padding-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.form-input {
+  height: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+textarea.form-input {
+  height: 8rem;
+}
+
+.form.button {
+  background: rgba(var(--secondary), 0.91);
+	color: inherit;
+	padding: 0;
+  border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  /* margin:  0; */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
 
 /* footer styles */
 .footer {

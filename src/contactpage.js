@@ -17,9 +17,9 @@ export default function buildContact() {
 
   // Get in touch section
   const contactContainerEl = buildElement({type: 'div', classes: ['contact', 'container']});
-  const businessDetailsEl = buildElement({type: 'div', classes: ['business-details', 'section']});
+  const businessDetailsEl = buildElement({type: 'div', classes: ['business-details', ]});
   const sectionAddressEl = buildElement({type: 'div', classes: ['section', 'address']});
-  const sectionAddressTitle = buildElement({type: 'h3', classes: ['address', 'title'], innerText: 'Address'})
+  const sectionAddressTitle = buildElement({type: 'h3', classes: ['address', 'section-title', ], innerText: 'Address'})
   const sectionAddressP = buildElement({type: 'p', classes: ['address', 'contact'], innerText: '132 Ridge Highway, Heathcote, Sydney, Australia 2233'})
 
   sectionAddressEl.appendChild(sectionAddressTitle);
@@ -29,7 +29,7 @@ export default function buildContact() {
 
   // Phone Section
   const sectionPhoneEl = buildElement({type: 'div', classes: ['section', 'phone']});
-  const sectionPhoneTitle = buildElement({type: 'h3', classes: ['Phone', 'title'], innerText: 'Phone'});
+  const sectionPhoneTitle = buildElement({type: 'h3', classes: ['Phone', 'section-title'], innerText: 'Phone'});
   const sectionPhoneP = buildElement({type: 'p', classes: ['Phone', 'contact'], innerText: '02 9520 8948'});
 
   sectionPhoneEl.appendChild(sectionPhoneTitle);
@@ -38,7 +38,7 @@ export default function buildContact() {
   
   // Open hours section
   const sectionHoursEl = buildElement({type: 'div', classes: ['section', 'hours']});
-  const sectionHoursTitle = buildElement({type: 'h3', classes: ['hours', 'title'], innerText: 'Opening Hours'});
+  const sectionHoursTitle = buildElement({type: 'h3', classes: ['hours', 'section-title'], innerText: 'Opening Hours'});
   const sectionHoursP = buildElement({type: 'p', classes: ['hours', 'contact'], innerText: 'Mon - Thu:   12pm - 9pm'});
   const sectionHoursP1 = buildElement({type: 'p', classes: ['hours', 'contact'], innerText: 'Fri - Sat:   12pm - 11pm'});
   const sectionHoursP2 = buildElement({type: 'p', classes: ['hours', 'contact'], innerText: 'Sun:   4pm - 9pm'});
@@ -52,7 +52,7 @@ export default function buildContact() {
   // form section
   const formContainerEl = buildElement({type: 'div', classes: ['contact', 'form-container']});
   const formEl = buildElement({type: 'form', classes: ['form', 'contact']});
-  const nameInputContainerEl = buildElement({type: 'div', classes: ['form', 'name-container']});
+  const nameInputContainerEl = buildElement({type: 'div', classes: ['form', 'input-container']});
   const nameInputLabel = buildElement({type: 'label', classes: ['form-label', 'name'], innerText: 'Name', attributes: [{for: 'name'}]});
   const nameInput = buildElement({type: 'input', classes: ['form', 'form-input'], id: 'name', attributes: [{type: 'text'}, {required: true}, {placeholder: 'Your Name'}]})
 
@@ -60,7 +60,7 @@ export default function buildContact() {
   nameInputContainerEl.appendChild(nameInputLabel);
   nameInputContainerEl.appendChild(nameInput);
 
-  const emailInputContainerEl = buildElement({type: 'div', classes: ['form', 'email-container']});
+  const emailInputContainerEl = buildElement({type: 'div', classes: ['form', 'input-container']});
   const emailInputLabel = buildElement({type: 'label', classes: ['form-label', 'email'], innerText: 'Email', attributes: [{for: 'Email'}]});
   const emailInput = buildElement({type: 'input', classes: ['form', 'form-input'], id: 'email', attributes: [{type: 'email'}, {required: true}, {placeholder: 'Your Email'}]})
 
@@ -68,7 +68,7 @@ export default function buildContact() {
   emailInputContainerEl.appendChild(emailInputLabel);
   emailInputContainerEl.appendChild(emailInput);
 
-  const messageInputContainerEl = buildElement({type: 'div', classes: ['form', 'message-container']});
+  const messageInputContainerEl = buildElement({type: 'div', classes: ['form', 'input-container']});
   const messageInputLabel = buildElement({type: 'label', classes: ['form-label', 'message'], innerText: 'Message', attributes: [{for: 'message'}]});
   const messageInput = buildElement({type: 'textarea', classes: ['form', 'form-input'], id: 'message', attributes: [{required: true}, {placeholder: 'Tell us what you think.'}]})
 
