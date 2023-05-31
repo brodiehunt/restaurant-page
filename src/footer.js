@@ -1,5 +1,7 @@
 import buildElement from './element-maker.js';
-
+import twitterIcon from './images/twitter-48.png';
+import facebookIcon from './images/facebook-3-48.png';
+import instagramIcon from './images/instagram-48.png';
 
 export default function buildFooter() {
 
@@ -13,9 +15,9 @@ export default function buildFooter() {
   const socialLinkFb = buildElement({type: 'a', classes: ['social-link-container', 'facebook'], href: 'https://www.facebook.com'});
   const socialLinkInsta = buildElement({type: 'a', classes: ['social-link-container', 'instagram'], href: 'https://www.instagram.com'});
   const socialLinkTwit = buildElement({type: 'a', classes: ['social-link-container', 'twitter'], href: 'https://www.twitter.com'});
-  const socialIconFb = buildElement({type: 'img', classes: ['social-icon', 'facebook-icon'], alt: 'Facebook icon', src: '/src/images/facebook-3-48.png'});
-  const socialIconInsta = buildElement({type: 'img', classes: ['social-icon', 'instagram-icon'], alt: 'Instagram icon', src: '/src/images/instagram-48.png'});
-  const socialIconTwit = buildElement({type: 'img', classes: ['social-icon', 'twitter-icon'], alt: 'Twitter icon', src: '/src/images/twitter-48.png'});
+  const socialIconFb = buildElement({type: 'img', classes: ['social-icon', 'facebook-icon'], alt: 'Facebook icon', src: facebookIcon });
+  const socialIconInsta = buildElement({type: 'img', classes: ['social-icon', 'instagram-icon'], alt: 'Instagram icon', src: instagramIcon });
+  const socialIconTwit = buildElement({type: 'img', classes: ['social-icon', 'twitter-icon'], alt: 'Twitter icon', src: twitterIcon });
   
   // Link Them together
   footerEl.appendChild(logoEl);
