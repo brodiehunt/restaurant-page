@@ -3,6 +3,7 @@ import buildHeader from './header.js';
 import buildFooter from './footer.js';
 import buildHomePage from './homepage.js';
 import buildMenu from './menupage.js';
+import buildContact from './contactpage.js';
 
 const bodyElement = document.querySelector('BODY');
 const contentContainerDiv = document.querySelector('.content');
@@ -25,6 +26,7 @@ function tabSwitch(event) {
   }
   if (event.target.id == 'contact') {
     // createStuff3(contentContainerDiv);
+    contentContainerDiv.appendChild(buildContact())
     console.log('contact');
   }
 }
