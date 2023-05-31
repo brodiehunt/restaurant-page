@@ -200,6 +200,10 @@ li#contact {
 .contact.img-container {
   position: relative;
   width: 100%;
+  max-width: 1024px;
+  max-height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .contact.img {
@@ -230,7 +234,7 @@ li#contact {
   margin-bottom: 4rem;
 }
 
-.section {
+.contact-section {
   padding: 1em 0;
   border-bottom: 1px solid black;
   margin-bottom: 1rem;
@@ -454,11 +458,28 @@ textarea.form-input {
     order: 2
   }
 
+  .contact.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+
+  }
+
+  .contact-section:last-child {
+    border: none;
+  }
+
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .landing.style-bg {
     height: 85vh;
+  }
+
+  .contact.img-container {
+    margin-top: 2rem;
   }
 }

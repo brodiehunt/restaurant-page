@@ -18,7 +18,7 @@ export default function buildContact() {
   // Get in touch section
   const contactContainerEl = buildElement({type: 'div', classes: ['contact', 'container']});
   const businessDetailsEl = buildElement({type: 'div', classes: ['business-details', ]});
-  const sectionAddressEl = buildElement({type: 'div', classes: ['section', 'address']});
+  const sectionAddressEl = buildElement({type: 'div', classes: ['contact-section', 'address']});
   const sectionAddressTitle = buildElement({type: 'h3', classes: ['address', 'section-title', ], innerText: 'Address'})
   const sectionAddressP = buildElement({type: 'p', classes: ['address', 'contact'], innerText: '132 Ridge Highway, Heathcote, Sydney, Australia 2233'})
 
@@ -28,7 +28,7 @@ export default function buildContact() {
   contactContainerEl.appendChild(businessDetailsEl);
 
   // Phone Section
-  const sectionPhoneEl = buildElement({type: 'div', classes: ['section', 'phone']});
+  const sectionPhoneEl = buildElement({type: 'div', classes: ['contact-section', 'phone']});
   const sectionPhoneTitle = buildElement({type: 'h3', classes: ['Phone', 'section-title'], innerText: 'Phone'});
   const sectionPhoneP = buildElement({type: 'p', classes: ['Phone', 'contact'], innerText: '02 9520 8948'});
 
@@ -37,7 +37,7 @@ export default function buildContact() {
   businessDetailsEl.appendChild(sectionPhoneEl);
   
   // Open hours section
-  const sectionHoursEl = buildElement({type: 'div', classes: ['section', 'hours']});
+  const sectionHoursEl = buildElement({type: 'div', classes: ['contact-section', 'hours']});
   const sectionHoursTitle = buildElement({type: 'h3', classes: ['hours', 'section-title'], innerText: 'Opening Hours'});
   const sectionHoursP = buildElement({type: 'p', classes: ['hours', 'contact'], innerText: 'Mon - Thu:   12pm - 9pm'});
   const sectionHoursP1 = buildElement({type: 'p', classes: ['hours', 'contact'], innerText: 'Fri - Sat:   12pm - 11pm'});
